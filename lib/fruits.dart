@@ -18,7 +18,7 @@ class Fruitpage extends StatelessWidget {
           child: Column(
             children: [
               Container(
-                child: Image.asset('images/cat/fruit.jpeg'),
+                child: Image.asset('images/cat/fruit.jpg'),
                 alignment: Alignment.topCenter,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),

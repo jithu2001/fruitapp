@@ -78,7 +78,7 @@ class Homepage extends StatelessWidget {
             ],
           ),
           Container(
-            height: 80.0,
+            height: 100.0,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: <Widget>[
@@ -95,9 +95,12 @@ class Homepage extends StatelessWidget {
                           width: 150.0,
                           child: ListTile(
                             title: Image.asset(
-                              'images/cat/fruit.jpeg',
+                              'images/cat/fruit.jpg',
                               width: 50.0,
-                              height: 80.0,
+                              height: 70.0,
+                            ),
+                            subtitle: Text(
+                              'Fruits',
                             ),
                             onTap: () {
                               Navigator.push(
