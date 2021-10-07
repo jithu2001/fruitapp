@@ -50,6 +50,7 @@ flutter:
      - images/products/carrot.jpg
      - images/products/orange.jpg
      - images/products/grapes.jpg
+     - images/products/broc.jpg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
