@@ -78,7 +78,7 @@ class Homepage extends StatelessWidget {
             ],
           ),
           Container(
-            height: 100.0,
+            height: 110.0,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: <Widget>[
@@ -92,7 +92,7 @@ class Homepage extends StatelessWidget {
                       child: InkWell(
                         onTap: () {},
                         child: Container(
-                          width: 150.0,
+                          width: 140.0,
                           child: ListTile(
                             title: Image.asset(
                               'images/cat/fruit.jpg',
@@ -101,6 +101,9 @@ class Homepage extends StatelessWidget {
                             ),
                             subtitle: Text(
                               'Fruits',
+                              style:
+                                  TextStyle(color: Colors.black, fontSize: 15),
+                              textAlign: TextAlign.center,
                             ),
                             onTap: () {
                               Navigator.push(
@@ -125,12 +128,18 @@ class Homepage extends StatelessWidget {
                       child: InkWell(
                         onTap: () {},
                         child: Container(
-                          width: 150.0,
+                          width: 140.0,
                           child: ListTile(
                             title: Image.asset(
-                              'images/cat/bread.jpeg',
+                              'images/cat/bread.jpg',
                               width: 50.0,
                               height: 80.0,
+                            ),
+                            subtitle: Text(
+                              'Breads',
+                              style:
+                                  TextStyle(color: Colors.black, fontSize: 15),
+                              textAlign: TextAlign.center,
                             ),
                           ),
                         ),
@@ -148,12 +157,47 @@ class Homepage extends StatelessWidget {
                       child: InkWell(
                         onTap: () {},
                         child: Container(
-                          width: 150.0,
+                          width: 140.0,
                           child: ListTile(
                             title: Image.asset(
-                              'images/cat/veg.jpeg',
+                              'images/cat/dairy.jpg',
                               width: 50.0,
                               height: 80.0,
+                            ),
+                            subtitle: Text(
+                              'Dairy',
+                              style:
+                                  TextStyle(color: Colors.black, fontSize: 15),
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
+                        ),
+                      ),
+                    )),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(2.0),
+                  child: InkWell(
+                    onTap: () {},
+                    child: Container(
+                        child: Padding(
+                      padding: const EdgeInsets.all(2.0),
+                      child: InkWell(
+                        onTap: () {},
+                        child: Container(
+                          width: 140.0,
+                          child: ListTile(
+                            title: Image.asset(
+                              'images/cat/veg.jpg',
+                              width: 50.0,
+                              height: 80.0,
+                            ),
+                            subtitle: Text(
+                              'Veggies',
+                              style:
+                                  TextStyle(color: Colors.black, fontSize: 15),
+                              textAlign: TextAlign.center,
                             ),
                           ),
                         ),
@@ -205,8 +249,8 @@ class Homepage extends StatelessWidget {
                             child: Image.asset(
                               'images/products/orange.jpg',
                               height: 100,
-                              width: 2,
-                              fit: BoxFit.cover,
+                              width: .5,
+                              fit: BoxFit.fill,
                             ),
                           ))),
                   Container(
@@ -216,20 +260,30 @@ class Homepage extends StatelessWidget {
                             style: TextStyle(color: Colors.green, fontSize: 20),
                             children: <TextSpan>[
                           TextSpan(
-                            text:
-                                "\Attributed Lorem is which\nreasonable.injected if type\n",
-                            style: TextStyle(color: Colors.grey, fontSize: 15),
-                          )
+                              text:
+                                  "\Attributed Lorem is which \nreasonable.injected if type\n",
+                              style:
+                                  TextStyle(color: Colors.grey, fontSize: 15),
+                              children: [
+                                TextSpan(
+                                    text: "\$40.0",
+                                    style: TextStyle(
+                                        color: Colors.grey,
+                                        fontSize: 20,
+                                        decoration:
+                                            TextDecoration.lineThrough)),
+                                TextSpan(
+                                    text: " \$30.0",
+                                    style: TextStyle(
+                                        color: Colors.black, fontSize: 20))
+                              ])
                         ])),
                   ),
-                  Text(
-                    "\$50.0",
-                    style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold),
-                    textAlign: TextAlign.left,
-                  )
+                  Expanded(
+                      child: Icon(
+                    Icons.favorite_outline,
+                    color: Colors.green,
+                  ))
                 ],
               )),
           Container(
@@ -261,19 +315,29 @@ class Homepage extends StatelessWidget {
                             style: TextStyle(color: Colors.green, fontSize: 20),
                             children: <TextSpan>[
                           TextSpan(
-                            text: "\Carrots have calcium and \nvitamins.\n",
-                            style: TextStyle(color: Colors.grey, fontSize: 15),
-                          )
+                              text: "\Carrots have calcium and \nvitamins.\n",
+                              style:
+                                  TextStyle(color: Colors.grey, fontSize: 15),
+                              children: [
+                                TextSpan(
+                                    text: "\$30.0",
+                                    style: TextStyle(
+                                        color: Colors.grey,
+                                        fontSize: 20,
+                                        decoration:
+                                            TextDecoration.lineThrough)),
+                                TextSpan(
+                                    text: " \$20.0",
+                                    style: TextStyle(
+                                        color: Colors.black, fontSize: 20))
+                              ])
                         ])),
                   ),
-                  Text(
-                    "\$20.0",
-                    style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold),
-                    textAlign: TextAlign.left,
-                  )
+                  Expanded(
+                      child: Icon(
+                    Icons.favorite_outline,
+                    color: Colors.green,
+                  ))
                 ],
               )),
           Container(
@@ -305,19 +369,29 @@ class Homepage extends StatelessWidget {
                             style: TextStyle(color: Colors.green, fontSize: 20),
                             children: <TextSpan>[
                           TextSpan(
-                            text: "\Packed With Nutrients\n And Vitamins!\n",
-                            style: TextStyle(color: Colors.grey, fontSize: 15),
-                          )
+                              text: "\Packed With Nutrients\n And Vitamins!\n",
+                              style:
+                                  TextStyle(color: Colors.grey, fontSize: 15),
+                              children: [
+                                TextSpan(
+                                    text: "\$700.0",
+                                    style: TextStyle(
+                                        color: Colors.grey,
+                                        fontSize: 20,
+                                        decoration:
+                                            TextDecoration.lineThrough)),
+                                TextSpan(
+                                    text: " \$65.0",
+                                    style: TextStyle(
+                                        color: Colors.black, fontSize: 20))
+                              ])
                         ])),
                   ),
-                  Text(
-                    "\$50.0",
-                    style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold),
-                    textAlign: TextAlign.left,
-                  )
+                  Expanded(
+                      child: Icon(
+                    Icons.favorite_outline,
+                    color: Colors.green,
+                  ))
                 ],
               )),
         ],
@@ -325,14 +399,14 @@ class Homepage extends StatelessWidget {
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.white.withOpacity(0.1),
         elevation: 1,
-        unselectedItemColor: Colors.grey,
+        unselectedItemColor: Colors.black,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.kitchen_outlined),
+            icon: Icon(Icons.home_outlined),
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.search),
+            icon: Icon(Icons.search_outlined),
             label: 'Search',
           ),
           BottomNavigationBarItem(
@@ -340,7 +414,7 @@ class Homepage extends StatelessWidget {
             label: 'Cart',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.people_outline),
+            icon: Icon(Icons.person_outline),
             label: 'Profile',
           ),
         ],
