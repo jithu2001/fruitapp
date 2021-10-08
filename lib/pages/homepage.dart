@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'fruits.dart';
-import 'notification.dart';
+import 'package:fruitapp/pages/fruits.dart';
+import 'package:fruitapp/pages/notification.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({Key? key}) : super(key: key);
