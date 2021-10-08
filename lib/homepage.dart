@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'fruits.dart';
+import 'notification.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({Key? key}) : super(key: key);
@@ -24,7 +25,12 @@ class Homepage extends StatelessWidget {
         ),
         actions: [
           IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => Notificationpage()));
+              },
               icon: Icon(
                 Icons.notifications_outlined,
                 color: Colors.grey,

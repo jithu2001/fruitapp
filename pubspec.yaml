@@ -48,6 +48,10 @@ flutter:
      - images/cat/bread.jpg
      - images/cat/veg.jpg
      - images/cat/dairy.jpg
+     - images/cat/cancel.jpg
+     - images/cat/deli.jpg
+     - images/cat/letter.png
+     - images/cat/placed.jpg
      - images/products/carrot.jpg
      - images/products/orange.jpg
      - images/products/grapes.jpg
