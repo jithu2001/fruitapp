@@ -108,7 +108,7 @@ class Notificationpage extends StatelessWidget {
               Container(
                   child: RichText(
                       text: TextSpan(
-                text: "Your order successfully delivered ",
+                text: "Your order successfully delivered!",
                 style: TextStyle(color: Colors.black, fontSize: 15),
               ))),
               Container(
@@ -138,7 +138,7 @@ class Notificationpage extends StatelessWidget {
               Container(
                   child: RichText(
                       text: TextSpan(
-                text: "A new email from developer     ",
+                text: "You have received an email     ",
                 style: TextStyle(color: Colors.black, fontSize: 15),
               ))),
               Container(

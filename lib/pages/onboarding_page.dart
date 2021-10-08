@@ -29,7 +29,9 @@ class OnBoardingPage extends StatelessWidget {
                   TextStyle(fontWeight: FontWeight.w600, color: Colors.black)),
           onDone: () => goToHome(context),
           showSkipButton: true,
-          skip: Text('SKIP'),
+          skip: Text('SKIP',
+              style:
+                  TextStyle(fontWeight: FontWeight.w600, color: Colors.black)),
           onSkip: () => goToHome(context),
           next: Icon(
             Icons.arrow_forward,
@@ -37,7 +39,7 @@ class OnBoardingPage extends StatelessWidget {
           ),
           dotsDecorator: getDotDecoration(),
           onChange: (index) => print('Page $index selected'),
-          globalBackgroundColor: Theme.of(context).primaryColor,
+          //globalBackgroundColor: Theme.of(context).primaryColor,
           skipFlex: 0,
           nextFlex: 0,
           // isProgressTap: false,

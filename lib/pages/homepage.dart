@@ -42,17 +42,21 @@ class Homepage extends StatelessWidget {
           child: Column(
         children: [
           Container(
-              height: 80,
+              height: 90,
               width: 350,
               margin: const EdgeInsets.all(20),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   color: Colors.lightGreen[50]),
               child: Container(
+                padding: EdgeInsets.all(7),
                 child: RichText(
                     text: TextSpan(
                         text: "Enjoy the special offer\nup to 60%",
-                        style: TextStyle(color: Colors.green, fontSize: 20),
+                        style: TextStyle(
+                            color: Colors.green,
+                            fontSize: 24,
+                            fontWeight: FontWeight.w700),
                         children: <TextSpan>[
                       TextSpan(
                         text: "\nat 21-30 october 2021",
@@ -61,26 +65,24 @@ class Homepage extends StatelessWidget {
                     ])),
               )),
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Expanded(
-                child: new Padding(
-                  padding: const EdgeInsets.fromLTRB(20, .5, 0, .5),
-                  child: Text(
-                    'Categories',
-                    style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 23),
-                  ),
+              new Padding(
+                padding: const EdgeInsets.fromLTRB(20, .5, 0, .5),
+                child: Text(
+                  'Categories',
+                  style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 23),
                 ),
               ),
-              Expanded(
-                  child: TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        'See All',
-                        style: TextStyle(color: Colors.grey, fontSize: 13),
-                      )))
+              TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    'See All   ',
+                    style: TextStyle(color: Colors.grey, fontSize: 13),
+                  ))
             ],
           ),
           Container(
@@ -98,6 +100,8 @@ class Homepage extends StatelessWidget {
                       child: InkWell(
                         onTap: () {},
                         child: Container(
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(15.0)),
                           width: 140.0,
                           child: ListTile(
                             title: Image.asset(
@@ -105,11 +109,14 @@ class Homepage extends StatelessWidget {
                               width: 50.0,
                               height: 70.0,
                             ),
-                            subtitle: Text(
-                              'Fruits',
-                              style:
-                                  TextStyle(color: Colors.black, fontSize: 15),
-                              textAlign: TextAlign.center,
+                            subtitle: Container(
+                              margin: EdgeInsets.all(5),
+                              child: Text(
+                                'Fruits',
+                                style: TextStyle(
+                                    color: Colors.black, fontSize: 15),
+                                textAlign: TextAlign.center,
+                              ),
                             ),
                             onTap: () {
                               Navigator.push(
@@ -134,20 +141,24 @@ class Homepage extends StatelessWidget {
                       child: InkWell(
                         onTap: () {},
                         child: Container(
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(15.0)),
                           width: 140.0,
                           child: ListTile(
-                            title: Image.asset(
-                              'images/cat/bread.jpg',
-                              width: 50.0,
-                              height: 80.0,
-                            ),
-                            subtitle: Text(
-                              'Breads',
-                              style:
-                                  TextStyle(color: Colors.black, fontSize: 15),
-                              textAlign: TextAlign.center,
-                            ),
-                          ),
+                              title: Image.asset(
+                                'images/cat/bread.jpg',
+                                width: 50.0,
+                                height: 70.0,
+                              ),
+                              subtitle: Container(
+                                margin: EdgeInsets.all(5),
+                                child: Text(
+                                  'Breads',
+                                  style: TextStyle(
+                                      color: Colors.black, fontSize: 15),
+                                  textAlign: TextAlign.center,
+                                ),
+                              )),
                         ),
                       ),
                     )),
@@ -163,20 +174,24 @@ class Homepage extends StatelessWidget {
                       child: InkWell(
                         onTap: () {},
                         child: Container(
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(15.0)),
                           width: 140.0,
                           child: ListTile(
-                            title: Image.asset(
-                              'images/cat/dairy.jpg',
-                              width: 50.0,
-                              height: 80.0,
-                            ),
-                            subtitle: Text(
-                              'Dairy',
-                              style:
-                                  TextStyle(color: Colors.black, fontSize: 15),
-                              textAlign: TextAlign.center,
-                            ),
-                          ),
+                              title: Image.asset(
+                                'images/cat/dairy.jpg',
+                                width: 50.0,
+                                height: 70.0,
+                              ),
+                              subtitle: Container(
+                                margin: EdgeInsets.all(5),
+                                child: Text(
+                                  'Dairy',
+                                  style: TextStyle(
+                                      color: Colors.black, fontSize: 15),
+                                  textAlign: TextAlign.center,
+                                ),
+                              )),
                         ),
                       ),
                     )),
@@ -192,20 +207,24 @@ class Homepage extends StatelessWidget {
                       child: InkWell(
                         onTap: () {},
                         child: Container(
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(15.0)),
                           width: 140.0,
                           child: ListTile(
-                            title: Image.asset(
-                              'images/cat/veg.jpg',
-                              width: 50.0,
-                              height: 80.0,
-                            ),
-                            subtitle: Text(
-                              'Veggies',
-                              style:
-                                  TextStyle(color: Colors.black, fontSize: 15),
-                              textAlign: TextAlign.center,
-                            ),
-                          ),
+                              title: Image.asset(
+                                'images/cat/veg.jpg',
+                                width: 50.0,
+                                height: 70.0,
+                              ),
+                              subtitle: Container(
+                                margin: EdgeInsets.all(5),
+                                child: Text(
+                                  'Veggies',
+                                  style: TextStyle(
+                                      color: Colors.black, fontSize: 15),
+                                  textAlign: TextAlign.center,
+                                ),
+                              )),
                         ),
                       ),
                     )),
@@ -215,26 +234,24 @@ class Homepage extends StatelessWidget {
             ),
           ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Expanded(
-                child: new Padding(
-                  padding: const EdgeInsets.fromLTRB(20, .5, 0, .5),
-                  child: Text(
-                    'Best Selling',
-                    style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 23),
-                  ),
+              new Padding(
+                padding: const EdgeInsets.fromLTRB(20, .5, 0, .5),
+                child: Text(
+                  'Best Selling',
+                  style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 23),
                 ),
               ),
-              Expanded(
-                  child: TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        'See All',
-                        style: TextStyle(color: Colors.grey, fontSize: 13),
-                      )))
+              TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    'See All   ',
+                    style: TextStyle(color: Colors.grey, fontSize: 13),
+                  ))
             ],
           ),
           Container(
@@ -246,40 +263,41 @@ class Homepage extends StatelessWidget {
                   color: Colors.grey[200]),
               child: Row(
                 children: [
-                  Expanded(
-                      flex: 3,
-                      child: Container(
-                          margin: EdgeInsets.all(10),
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(20.0),
-                            child: Image.asset(
-                              'images/products/orange.jpg',
-                              height: 100,
-                              width: .5,
-                              fit: BoxFit.fill,
-                            ),
-                          ))),
+                  Container(
+                      height: 100,
+                      width: 100,
+                      margin: EdgeInsets.all(10),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(20.0),
+                        child: Image.asset(
+                          'images/products/orange.jpg',
+                          fit: BoxFit.fill,
+                        ),
+                      )),
                   Container(
                     child: RichText(
                         text: TextSpan(
-                            text: "Fresh oranges\n",
-                            style: TextStyle(color: Colors.green, fontSize: 20),
+                            text: "Fresh Oranges\n",
+                            style: TextStyle(
+                                color: Colors.green,
+                                fontSize: 26,
+                                fontWeight: FontWeight.w500),
                             children: <TextSpan>[
                           TextSpan(
                               text:
                                   "\Attributed Lorem is which \nreasonable.injected if type\n",
                               style:
-                                  TextStyle(color: Colors.grey, fontSize: 15),
+                                  TextStyle(color: Colors.grey, fontSize: 14),
                               children: [
                                 TextSpan(
-                                    text: "\$40.0",
+                                    text: "\$40.0 ",
                                     style: TextStyle(
                                         color: Colors.grey,
-                                        fontSize: 20,
+                                        fontSize: 16,
                                         decoration:
                                             TextDecoration.lineThrough)),
                                 TextSpan(
-                                    text: " \$30.0",
+                                    text: "  \$30.0",
                                     style: TextStyle(
                                         color: Colors.black, fontSize: 20))
                               ])
@@ -301,39 +319,40 @@ class Homepage extends StatelessWidget {
                   color: Colors.grey[200]),
               child: Row(
                 children: [
-                  Expanded(
-                      flex: 3,
-                      child: Container(
-                          margin: EdgeInsets.all(10),
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(20.0),
-                            child: Image.asset(
-                              'images/products/carrot.jpg',
-                              height: 100,
-                              width: 2,
-                              fit: BoxFit.cover,
-                            ),
-                          ))),
+                  Container(
+                      height: 100,
+                      width: 100,
+                      margin: EdgeInsets.all(10),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(20.0),
+                        child: Image.asset(
+                          'images/products/carrot.jpg',
+                          fit: BoxFit.fill,
+                        ),
+                      )),
                   Container(
                     child: RichText(
                         text: TextSpan(
                             text: "Fresh Carrots\n",
-                            style: TextStyle(color: Colors.green, fontSize: 20),
+                            style: TextStyle(
+                                color: Colors.green,
+                                fontSize: 26,
+                                fontWeight: FontWeight.w500),
                             children: <TextSpan>[
                           TextSpan(
                               text: "\Carrots have calcium and \nvitamins.\n",
                               style:
-                                  TextStyle(color: Colors.grey, fontSize: 15),
+                                  TextStyle(color: Colors.grey, fontSize: 14),
                               children: [
                                 TextSpan(
-                                    text: "\$30.0",
+                                    text: "\$30.0 ",
                                     style: TextStyle(
                                         color: Colors.grey,
-                                        fontSize: 20,
+                                        fontSize: 16,
                                         decoration:
                                             TextDecoration.lineThrough)),
                                 TextSpan(
-                                    text: " \$20.0",
+                                    text: "  \$20.0",
                                     style: TextStyle(
                                         color: Colors.black, fontSize: 20))
                               ])
@@ -355,39 +374,40 @@ class Homepage extends StatelessWidget {
                   color: Colors.grey[200]),
               child: Row(
                 children: [
-                  Expanded(
-                      flex: 3,
-                      child: Container(
-                          margin: EdgeInsets.all(10),
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(20.0),
-                            child: Image.asset(
-                              'images/products/grapes.jpg',
-                              height: 100,
-                              width: 2,
-                              fit: BoxFit.cover,
-                            ),
-                          ))),
+                  Container(
+                      height: 100,
+                      width: 100,
+                      margin: EdgeInsets.all(10),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(20.0),
+                        child: Image.asset(
+                          'images/products/grapes.jpg',
+                          fit: BoxFit.fill,
+                        ),
+                      )),
                   Container(
                     child: RichText(
                         text: TextSpan(
-                            text: "Fresh Juicy Grapes\n",
-                            style: TextStyle(color: Colors.green, fontSize: 20),
+                            text: "Juicy Grapes\n",
+                            style: TextStyle(
+                                color: Colors.green,
+                                fontSize: 26,
+                                fontWeight: FontWeight.w500),
                             children: <TextSpan>[
                           TextSpan(
                               text: "\Packed With Nutrients\n And Vitamins!\n",
                               style:
-                                  TextStyle(color: Colors.grey, fontSize: 15),
+                                  TextStyle(color: Colors.grey, fontSize: 14),
                               children: [
                                 TextSpan(
-                                    text: "\$700.0",
+                                    text: "\$70.0",
                                     style: TextStyle(
                                         color: Colors.grey,
-                                        fontSize: 20,
+                                        fontSize: 16,
                                         decoration:
                                             TextDecoration.lineThrough)),
                                 TextSpan(
-                                    text: " \$65.0",
+                                    text: "  \$65.0",
                                     style: TextStyle(
                                         color: Colors.black, fontSize: 20))
                               ])
