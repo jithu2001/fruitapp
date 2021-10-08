@@ -270,7 +270,7 @@ class Homepage extends StatelessWidget {
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(20.0),
                         child: Image.asset(
-                          'images/products/orange.jpg',
+                          'images/products/image3.jpg',
                           fit: BoxFit.fill,
                         ),
                       )),
@@ -307,7 +307,7 @@ class Homepage extends StatelessWidget {
                       child: Icon(
                     Icons.favorite_outline,
                     color: Colors.green,
-                  ))
+                  )),
                 ],
               )),
           Container(

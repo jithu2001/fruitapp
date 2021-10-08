@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fruitapp/pages/juicygrapes.dart';
 
 class Fruitpage extends StatelessWidget {
   const Fruitpage({Key? key}) : super(key: key);
@@ -45,41 +46,41 @@ class Fruitpage extends StatelessWidget {
                       color: Colors.grey[200]),
                   child: Row(
                     children: [
-                      Expanded(
-                          flex: 3,
-                          child: Container(
-                              margin: EdgeInsets.all(10),
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(20.0),
-                                child: Image.asset(
-                                  'images/products/orange.jpg',
-                                  height: 100,
-                                  width: .5,
-                                  fit: BoxFit.fill,
-                                ),
-                              ))),
+                      Container(
+                          height: 100,
+                          width: 100,
+                          margin: EdgeInsets.all(10),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(20.0),
+                            child: Image.asset(
+                              'images/products/image3.jpg',
+                              fit: BoxFit.fill,
+                            ),
+                          )),
                       Container(
                         child: RichText(
                             text: TextSpan(
-                                text: "Fresh oranges\n",
+                                text: "Fresh Oranges\n",
                                 style: TextStyle(
-                                    color: Colors.green, fontSize: 20),
+                                    color: Colors.green,
+                                    fontSize: 26,
+                                    fontWeight: FontWeight.w500),
                                 children: <TextSpan>[
                               TextSpan(
                                   text:
                                       "\Attributed Lorem is which \nreasonable.injected if type\n",
                                   style: TextStyle(
-                                      color: Colors.grey, fontSize: 15),
+                                      color: Colors.grey, fontSize: 14),
                                   children: [
                                     TextSpan(
-                                        text: "\$40.0",
+                                        text: "\$40.0 ",
                                         style: TextStyle(
                                             color: Colors.grey,
-                                            fontSize: 20,
+                                            fontSize: 16,
                                             decoration:
                                                 TextDecoration.lineThrough)),
                                     TextSpan(
-                                        text: " \$30.0",
+                                        text: "  \$30.0",
                                         style: TextStyle(
                                             color: Colors.black, fontSize: 20))
                                   ])
@@ -89,7 +90,14 @@ class Fruitpage extends StatelessWidget {
                           child: Icon(
                         Icons.favorite_outline,
                         color: Colors.green,
-                      ))
+                      )),
+                      Expanded(
+                          child: IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.forward_outlined,
+                                color: Colors.green,
+                              )))
                     ],
                   )),
               Container(
@@ -101,41 +109,41 @@ class Fruitpage extends StatelessWidget {
                       color: Colors.grey[200]),
                   child: Row(
                     children: [
-                      Expanded(
-                          flex: 3,
-                          child: Container(
-                              margin: EdgeInsets.all(10),
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(20.0),
-                                child: Image.asset(
-                                  'images/products/carrot.jpg',
-                                  height: 100,
-                                  width: 2,
-                                  fit: BoxFit.cover,
-                                ),
-                              ))),
+                      Container(
+                          height: 100,
+                          width: 100,
+                          margin: EdgeInsets.all(10),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(20.0),
+                            child: Image.asset(
+                              'images/products/carrot.jpg',
+                              fit: BoxFit.fill,
+                            ),
+                          )),
                       Container(
                         child: RichText(
                             text: TextSpan(
                                 text: "Fresh Carrots\n",
                                 style: TextStyle(
-                                    color: Colors.green, fontSize: 20),
+                                    color: Colors.green,
+                                    fontSize: 26,
+                                    fontWeight: FontWeight.w500),
                                 children: <TextSpan>[
                               TextSpan(
                                   text:
                                       "\Carrots have calcium and \nvitamins.\n",
                                   style: TextStyle(
-                                      color: Colors.grey, fontSize: 15),
+                                      color: Colors.grey, fontSize: 14),
                                   children: [
                                     TextSpan(
-                                        text: "\$30.0",
+                                        text: "\$30.0 ",
                                         style: TextStyle(
                                             color: Colors.grey,
-                                            fontSize: 20,
+                                            fontSize: 16,
                                             decoration:
                                                 TextDecoration.lineThrough)),
                                     TextSpan(
-                                        text: " \$20.0",
+                                        text: "  \$20.0",
                                         style: TextStyle(
                                             color: Colors.black, fontSize: 20))
                                   ])
@@ -145,7 +153,14 @@ class Fruitpage extends StatelessWidget {
                           child: Icon(
                         Icons.favorite_outline,
                         color: Colors.green,
-                      ))
+                      )),
+                      Expanded(
+                          child: IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.forward_outlined,
+                                color: Colors.green,
+                              )))
                     ],
                   )),
               Container(
@@ -157,41 +172,41 @@ class Fruitpage extends StatelessWidget {
                       color: Colors.grey[200]),
                   child: Row(
                     children: [
-                      Expanded(
-                          flex: 3,
-                          child: Container(
-                              margin: EdgeInsets.all(10),
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(20.0),
-                                child: Image.asset(
-                                  'images/products/grapes.jpg',
-                                  height: 100,
-                                  width: 2,
-                                  fit: BoxFit.cover,
-                                ),
-                              ))),
+                      Container(
+                          height: 100,
+                          width: 100,
+                          margin: EdgeInsets.all(10),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(20.0),
+                            child: Image.asset(
+                              'images/products/grapes.jpg',
+                              fit: BoxFit.fill,
+                            ),
+                          )),
                       Container(
                         child: RichText(
                             text: TextSpan(
-                                text: "Fresh Juicy Grapes\n",
+                                text: "Juicy Grapes\n",
                                 style: TextStyle(
-                                    color: Colors.green, fontSize: 20),
+                                    color: Colors.green,
+                                    fontSize: 26,
+                                    fontWeight: FontWeight.w500),
                                 children: <TextSpan>[
                               TextSpan(
                                   text:
                                       "\Packed With Nutrients\n And Vitamins!\n",
                                   style: TextStyle(
-                                      color: Colors.grey, fontSize: 15),
+                                      color: Colors.grey, fontSize: 14),
                                   children: [
                                     TextSpan(
-                                        text: "\$700.0",
+                                        text: "\$70.0",
                                         style: TextStyle(
                                             color: Colors.grey,
-                                            fontSize: 20,
+                                            fontSize: 16,
                                             decoration:
                                                 TextDecoration.lineThrough)),
                                     TextSpan(
-                                        text: " \$65.0",
+                                        text: "  \$65.0",
                                         style: TextStyle(
                                             color: Colors.black, fontSize: 20))
                                   ])
@@ -201,7 +216,19 @@ class Fruitpage extends StatelessWidget {
                           child: Icon(
                         Icons.favorite_outline,
                         color: Colors.green,
-                      ))
+                      )),
+                      Expanded(
+                          child: IconButton(
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => juicy()));
+                              },
+                              icon: Icon(
+                                Icons.forward_outlined,
+                                color: Colors.green,
+                              )))
                     ],
                   )),
               Container(
@@ -213,41 +240,41 @@ class Fruitpage extends StatelessWidget {
                       color: Colors.grey[200]),
                   child: Row(
                     children: [
-                      Expanded(
-                          flex: 3,
-                          child: Container(
-                              margin: EdgeInsets.all(10),
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(20.0),
-                                child: Image.asset(
-                                  'images/products/broc.jpg',
-                                  height: 100,
-                                  width: .5,
-                                  fit: BoxFit.fill,
-                                ),
-                              ))),
+                      Container(
+                          height: 100,
+                          width: 100,
+                          margin: EdgeInsets.all(10),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(20.0),
+                            child: Image.asset(
+                              'images/products/broc.jpg',
+                              fit: BoxFit.fill,
+                            ),
+                          )),
                       Container(
                         child: RichText(
                             text: TextSpan(
                                 text: "Green Broccoli\n",
                                 style: TextStyle(
-                                    color: Colors.green, fontSize: 20),
+                                    color: Colors.green,
+                                    fontSize: 26,
+                                    fontWeight: FontWeight.w500),
                                 children: <TextSpan>[
                               TextSpan(
                                   text:
                                       "\Good for heart health and \neye health\n",
                                   style: TextStyle(
-                                      color: Colors.grey, fontSize: 15),
+                                      color: Colors.grey, fontSize: 14),
                                   children: [
                                     TextSpan(
                                         text: "\$25.0",
                                         style: TextStyle(
                                             color: Colors.grey,
-                                            fontSize: 20,
+                                            fontSize: 16,
                                             decoration:
                                                 TextDecoration.lineThrough)),
                                     TextSpan(
-                                        text: " \$15.0",
+                                        text: "  \$15.0",
                                         style: TextStyle(
                                             color: Colors.black, fontSize: 20))
                                   ])
@@ -257,7 +284,14 @@ class Fruitpage extends StatelessWidget {
                           child: Icon(
                         Icons.favorite_outline,
                         color: Colors.green,
-                      ))
+                      )),
+                      Expanded(
+                          child: IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.forward_outlined,
+                                color: Colors.green,
+                              )))
                     ],
                   )),
             ],

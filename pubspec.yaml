@@ -47,20 +47,9 @@ flutter:
   # the material Icons class.
   uses-material-design: true 
   assets:
-     - images/cat/fruit.jpg
-     - images/cat/bread.jpg
-     - images/cat/veg.jpg
-     - images/cat/dairy.jpg
-     - images/cat/cancel.jpg
-     - images/cat/deli.jpg
-     - images/cat/letter.png
-     - images/cat/placed.jpg
-     - images/products/carrot.jpg
-     - images/products/orange.jpg
-     - images/products/grapes.jpg
-     - images/products/broc.jpg
-     - images/image11.jpg
-     - images/image22.jpg
+     - images/cat/
+     - images/products/
+     - images/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
