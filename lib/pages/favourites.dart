@@ -28,9 +28,9 @@ class _favrtState extends State<favrt> {
             icon: Icon(Icons.arrow_back_ios, color: Colors.black),
           ),
           title: const Text(
-            "Favourite",
+            "Favourites",
             style: TextStyle(
-                fontSize: 16, fontWeight: FontWeight.w500, color: Colors.black),
+                fontSize: 19, fontWeight: FontWeight.w600, color: Colors.black),
           ),
           backgroundColor: Colors.white,
         ),
@@ -40,11 +40,11 @@ class _favrtState extends State<favrt> {
             crossAxisAlignment: CrossAxisAlignment.start,
             // ignore: prefer_const_literals_to_create_immutables
             children: [
-              const Text(
-                'Favourite',
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
-                //textAlign: TextAlign.justify,
-              ),
+              /*const Text(
+            'Favourite',
+            style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+            //textAlign: TextAlign.justify,
+          ),*/
               //Container(
               //  child:
               //SingleChildScrollView(
@@ -63,13 +63,17 @@ class _favrtState extends State<favrt> {
                   return Row(
                     children: [
                       Container(
-                          height: 216,
+                          height:
+                              ((MediaQuery.of(context).size.width - 90) / 2) +
+                                  41,
                           margin: EdgeInsets.only(left: 20, bottom: 15),
                           width: (MediaQuery.of(context).size.width - 90) / 2,
                           //padding: EdgeInsets.all(5),
                           child: Column(children: [
                             Container(
-                                height: 175,
+                                height:
+                                    (MediaQuery.of(context).size.width - 90) /
+                                        2,
                                 width:
                                     (MediaQuery.of(context).size.width - 90) /
                                         2,
@@ -124,14 +128,19 @@ class _favrtState extends State<favrt> {
                             ),
                           ])),
                       Container(
-                          height: 216,
+                          height:
+                              ((MediaQuery.of(context).size.width - 90) / 2) +
+                                  31 +
+                                  10,
                           width: (MediaQuery.of(context).size.width - 90) / 2,
                           margin:
                               EdgeInsets.only(left: 30, bottom: 15, right: 20),
                           //padding: EdgeInsets.all(5),
                           child: Column(children: [
                             Container(
-                                height: 175,
+                                height:
+                                    (MediaQuery.of(context).size.width - 90) /
+                                        2,
                                 width:
                                     (MediaQuery.of(context).size.width - 90) /
                                         2,
