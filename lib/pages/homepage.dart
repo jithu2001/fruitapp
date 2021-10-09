@@ -269,208 +269,195 @@ class Homepage extends StatelessWidget {
                   ))
             ],
           ),
-          Container(
-              height: 120,
-              width: 350,
-              margin: const EdgeInsets.all(10),
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  color: Colors.grey[200]),
-              child: Row(
-                children: [
-                  Container(
-                      height: 100,
-                      width: 100,
-                      margin: EdgeInsets.all(10),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(20.0),
-                        child: Image.asset(
-                          'images/products/image3.jpg',
-                          fit: BoxFit.fill,
-                        ),
+          GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const juicy()),
+                );
+              },
+              child: Container(
+                  height: 120,
+                  width: 350,
+                  margin: const EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Colors.grey[200]),
+                  child: Row(
+                    children: [
+                      Container(
+                          height: 100,
+                          width: 100,
+                          margin: EdgeInsets.all(10),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(20.0),
+                            child: Image.asset(
+                              'images/products/image3.jpg',
+                              fit: BoxFit.fill,
+                            ),
+                          )),
+                      Container(
+                        child: RichText(
+                            text: TextSpan(
+                                text: "Fresh Oranges\n",
+                                style: TextStyle(
+                                    color: Colors.green,
+                                    fontSize: 26,
+                                    fontWeight: FontWeight.w500),
+                                children: <TextSpan>[
+                              TextSpan(
+                                  text:
+                                      "\Attributed Lorem is which \nreasonable.injected if type\n",
+                                  style: TextStyle(
+                                      color: Colors.grey, fontSize: 14),
+                                  children: [
+                                    TextSpan(
+                                        text: "\$40.0 ",
+                                        style: TextStyle(
+                                            color: Colors.grey,
+                                            fontSize: 16,
+                                            decoration:
+                                                TextDecoration.lineThrough)),
+                                    TextSpan(
+                                        text: "  \$30.0",
+                                        style: TextStyle(
+                                            color: Colors.black, fontSize: 20))
+                                  ])
+                            ])),
+                      ),
+                      Expanded(
+                          child: Icon(
+                        Icons.favorite_outline,
+                        color: Colors.green,
                       )),
-                  Container(
-                    child: RichText(
-                        text: TextSpan(
-                            text: "Fresh Oranges\n",
-                            style: TextStyle(
-                                color: Colors.green,
-                                fontSize: 26,
-                                fontWeight: FontWeight.w500),
-                            children: <TextSpan>[
-                          TextSpan(
-                              text:
-                                  "\Attributed Lorem is which \nreasonable.injected if type\n",
-                              style:
-                                  TextStyle(color: Colors.grey, fontSize: 14),
-                              children: [
-                                TextSpan(
-                                    text: "\$40.0 ",
-                                    style: TextStyle(
-                                        color: Colors.grey,
-                                        fontSize: 16,
-                                        decoration:
-                                            TextDecoration.lineThrough)),
-                                TextSpan(
-                                    text: "  \$30.0",
-                                    style: TextStyle(
-                                        color: Colors.black, fontSize: 20))
-                              ])
-                        ])),
-                  ),
-                  Expanded(
-                      child: Icon(
-                    Icons.favorite_outline,
-                    color: Colors.green,
-                  )),
-                  Expanded(
-                      child: IconButton(
-                          onPressed: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => juicy()));
-                          },
-                          icon: Icon(
-                            Icons.forward_outlined,
-                            color: Colors.green,
-                          )))
-                ],
-              )),
-          Container(
-              height: 120,
-              width: 350,
-              margin: const EdgeInsets.all(10),
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  color: Colors.grey[200]),
-              child: Row(
-                children: [
-                  Container(
-                      height: 100,
-                      width: 100,
-                      margin: EdgeInsets.all(10),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(20.0),
-                        child: Image.asset(
-                          'images/products/carrot.jpg',
-                          fit: BoxFit.fill,
-                        ),
+                    ],
+                  ))),
+          GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const juicy()),
+                );
+              },
+              child: Container(
+                  height: 120,
+                  width: 350,
+                  margin: const EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Colors.grey[200]),
+                  child: Row(
+                    children: [
+                      Container(
+                          height: 100,
+                          width: 100,
+                          margin: EdgeInsets.all(10),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(20.0),
+                            child: Image.asset(
+                              'images/products/carrot.jpg',
+                              fit: BoxFit.fill,
+                            ),
+                          )),
+                      Container(
+                        child: RichText(
+                            text: TextSpan(
+                                text: "Fresh Carrots\n",
+                                style: TextStyle(
+                                    color: Colors.green,
+                                    fontSize: 26,
+                                    fontWeight: FontWeight.w500),
+                                children: <TextSpan>[
+                              TextSpan(
+                                  text:
+                                      "\Carrots have calcium and \nvitamins.\n",
+                                  style: TextStyle(
+                                      color: Colors.grey, fontSize: 14),
+                                  children: [
+                                    TextSpan(
+                                        text: "\$30.0 ",
+                                        style: TextStyle(
+                                            color: Colors.grey,
+                                            fontSize: 16,
+                                            decoration:
+                                                TextDecoration.lineThrough)),
+                                    TextSpan(
+                                        text: "  \$20.0",
+                                        style: TextStyle(
+                                            color: Colors.black, fontSize: 20))
+                                  ])
+                            ])),
+                      ),
+                      Expanded(
+                          child: Icon(
+                        Icons.favorite_outline,
+                        color: Colors.green,
                       )),
-                  Container(
-                    child: RichText(
-                        text: TextSpan(
-                            text: "Fresh Carrots\n",
-                            style: TextStyle(
-                                color: Colors.green,
-                                fontSize: 26,
-                                fontWeight: FontWeight.w500),
-                            children: <TextSpan>[
-                          TextSpan(
-                              text: "\Carrots have calcium and \nvitamins.\n",
-                              style:
-                                  TextStyle(color: Colors.grey, fontSize: 14),
-                              children: [
-                                TextSpan(
-                                    text: "\$30.0 ",
-                                    style: TextStyle(
-                                        color: Colors.grey,
-                                        fontSize: 16,
-                                        decoration:
-                                            TextDecoration.lineThrough)),
-                                TextSpan(
-                                    text: "  \$20.0",
-                                    style: TextStyle(
-                                        color: Colors.black, fontSize: 20))
-                              ])
-                        ])),
-                  ),
-                  Expanded(
-                      child: Icon(
-                    Icons.favorite_outline,
-                    color: Colors.green,
-                  )),
-                  Expanded(
-                      child: IconButton(
-                          onPressed: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => juicy()));
-                          },
-                          icon: Icon(
-                            Icons.forward_outlined,
-                            color: Colors.green,
-                          )))
-                ],
-              )),
-          Container(
-              height: 120,
-              width: 350,
-              margin: const EdgeInsets.all(10),
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  color: Colors.grey[200]),
-              child: Row(
-                children: [
-                  Container(
-                      height: 100,
-                      width: 100,
-                      margin: EdgeInsets.all(10),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(20.0),
-                        child: Image.asset(
-                          'images/products/grapes.jpg',
-                          fit: BoxFit.fill,
-                        ),
+                    ],
+                  ))),
+          GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const juicy()),
+                );
+              },
+              child: Container(
+                  height: 120,
+                  width: 350,
+                  margin: const EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Colors.grey[200]),
+                  child: Row(
+                    children: [
+                      Container(
+                          height: 100,
+                          width: 100,
+                          margin: EdgeInsets.all(10),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(20.0),
+                            child: Image.asset(
+                              'images/products/grapes.jpg',
+                              fit: BoxFit.fill,
+                            ),
+                          )),
+                      Container(
+                        child: RichText(
+                            text: TextSpan(
+                                text: "Juicy Grapes\n",
+                                style: TextStyle(
+                                    color: Colors.green,
+                                    fontSize: 26,
+                                    fontWeight: FontWeight.w500),
+                                children: <TextSpan>[
+                              TextSpan(
+                                  text:
+                                      "\Packed With Nutrients\n And Vitamins!\n",
+                                  style: TextStyle(
+                                      color: Colors.grey, fontSize: 14),
+                                  children: [
+                                    TextSpan(
+                                        text: "\$70.0",
+                                        style: TextStyle(
+                                            color: Colors.grey,
+                                            fontSize: 16,
+                                            decoration:
+                                                TextDecoration.lineThrough)),
+                                    TextSpan(
+                                        text: "  \$65.0",
+                                        style: TextStyle(
+                                            color: Colors.black, fontSize: 20))
+                                  ])
+                            ])),
+                      ),
+                      Expanded(
+                          child: Icon(
+                        Icons.favorite_outline,
+                        color: Colors.green,
                       )),
-                  Container(
-                    child: RichText(
-                        text: TextSpan(
-                            text: "Juicy Grapes\n",
-                            style: TextStyle(
-                                color: Colors.green,
-                                fontSize: 26,
-                                fontWeight: FontWeight.w500),
-                            children: <TextSpan>[
-                          TextSpan(
-                              text: "\Packed With Nutrients\n And Vitamins!\n",
-                              style:
-                                  TextStyle(color: Colors.grey, fontSize: 14),
-                              children: [
-                                TextSpan(
-                                    text: "\$70.0",
-                                    style: TextStyle(
-                                        color: Colors.grey,
-                                        fontSize: 16,
-                                        decoration:
-                                            TextDecoration.lineThrough)),
-                                TextSpan(
-                                    text: "  \$65.0",
-                                    style: TextStyle(
-                                        color: Colors.black, fontSize: 20))
-                              ])
-                        ])),
-                  ),
-                  Expanded(
-                      child: Icon(
-                    Icons.favorite_outline,
-                    color: Colors.green,
-                  )),
-                  Expanded(
-                      child: IconButton(
-                          onPressed: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => juicy()));
-                          },
-                          icon: Icon(
-                            Icons.forward_outlined,
-                            color: Colors.green,
-                          )))
-                ],
-              )),
+                    ],
+                  ))),
         ],
       )),
       bottomNavigationBar: Row(
