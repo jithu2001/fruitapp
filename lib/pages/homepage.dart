@@ -7,6 +7,7 @@ import 'package:fruitapp/pages/notification.dart';
 import 'package:fruitapp/pages/searchPage.dart';
 import 'package:fruitapp/pages/settingpage.dart';
 import 'package:fruitapp/pages/juicygrapes.dart';
+import 'package:fruitapp/pages/favourites.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({Key? key}) : super(key: key);
@@ -38,6 +39,15 @@ class Homepage extends StatelessWidget {
               },
               icon: Icon(
                 Icons.notifications_outlined,
+                color: Colors.grey,
+              )),
+          IconButton(
+              onPressed: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => favrt()));
+              },
+              icon: Icon(
+                Icons.favorite_outlined,
                 color: Colors.grey,
               ))
         ],

@@ -22,7 +22,7 @@ class Privay extends StatelessWidget {
         alignment: Alignment.topCenter,
         child: Text(
           "We keep your personal information private, safe and secure.\n\n\nProtecting your privacy starts with the world’s most advanced security.\n\n\nYour privacy is protected by responsible data practices.",
-          style: TextStyle(color: Colors.blue, fontSize: 26),
+          style: TextStyle(color: Colors.black, fontSize: 26),
           textAlign: TextAlign.center,
         ),
       ),

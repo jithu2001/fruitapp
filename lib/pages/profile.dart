@@ -23,6 +23,9 @@ class Profilepage extends StatelessWidget {
       ),
       body: Column(
         children: [
+          SizedBox(
+            height: 10,
+          ),
           Container(
             height: 60,
             width: 350,
@@ -42,6 +45,9 @@ class Profilepage extends StatelessWidget {
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.all(Radius.circular(20)),
                 border: Border.all(width: 1.0, color: Colors.grey)),
+          ),
+          SizedBox(
+            height: 10,
           ),
           Container(
             height: 60,
@@ -63,6 +69,9 @@ class Profilepage extends StatelessWidget {
                 borderRadius: BorderRadius.all(Radius.circular(20)),
                 border: Border.all(width: 1.0, color: Colors.grey)),
           ),
+          SizedBox(
+            height: 10,
+          ),
           Container(
             height: 60,
             width: 350,
@@ -82,6 +91,9 @@ class Profilepage extends StatelessWidget {
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.all(Radius.circular(20)),
                 border: Border.all(width: 1.0, color: Colors.grey)),
+          ),
+          SizedBox(
+            height: 10,
           ),
           Container(
             height: 60,

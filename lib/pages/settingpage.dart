@@ -3,6 +3,7 @@ import 'package:fruitapp/pages/notificationsetting.dart';
 import 'package:fruitapp/pages/profile.dart';
 import 'package:fruitapp/pages/privacy.dart';
 import 'package:fruitapp/pages/about.dart';
+import 'package:fruitapp/pages/help.dart';
 
 class Settingpage extends StatelessWidget {
   const Settingpage({Key? key}) : super(key: key);
@@ -102,7 +103,12 @@ class Settingpage extends StatelessWidget {
                 Icons.help_outline,
                 color: Colors.black,
               ),
-              onTap: null,
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Help()),
+                );
+              },
             ),
           ),
           InkWell(

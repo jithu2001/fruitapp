@@ -142,7 +142,7 @@ class _CartPageState extends State<CartPage> {
                               Container(
                                 margin: EdgeInsets.all(10),
                                 height: 150,
-                                width: 180,
+                                width: 150,
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(15.0)),
                                 child: Column(
@@ -243,7 +243,7 @@ class _CartPageState extends State<CartPage> {
                               Container(
                                 margin: EdgeInsets.all(10),
                                 height: 150,
-                                width: 180,
+                                width: 150,
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(15.0)),
                                 child: Column(
