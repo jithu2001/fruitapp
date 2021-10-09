@@ -3,6 +3,7 @@
 //import 'dart:ffi';
 
 import 'package:flutter/material.dart';
+import 'package:fruitapp/pages/cartPage.dart';
 
 class Grapes extends StatelessWidget {
   //const Grapes({ Key? key }) : super(key: key);
@@ -168,7 +169,13 @@ class _juicyState extends State<juicy> {
                               Row(
                                 children: [
                                   InkWell(
-                                    onTap: () {},
+                                    onTap: () {
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) =>
+                                                  const CartPage()));
+                                    },
                                     child: Container(
                                       padding: EdgeInsets.symmetric(
                                           horizontal: 20, vertical: 10),
