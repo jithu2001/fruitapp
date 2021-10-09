@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:fruitapp/pages/ordersPage.dart';
+import 'package:fruitapp/pages/homepage.dart';
+import 'package:fruitapp/pages/promoCode.dart';
+import 'package:fruitapp/pages/searchPage.dart';
+import 'package:fruitapp/pages/settingpage.dart';
 
 class CartPage extends StatefulWidget {
   const CartPage({Key? key}) : super(key: key);
@@ -43,7 +48,7 @@ class _CartPageState extends State<CartPage> {
       appBar: AppBar(
         leading: IconButton(
           onPressed: () => Navigator.of(context).pop(),
-          icon: Icon(Iconsax.arrow_left, color: Colors.black),
+          icon: Icon(Icons.arrow_back_ios, color: Colors.black),
         ),
         title: Text(
           'Cart',
@@ -54,7 +59,8 @@ class _CartPageState extends State<CartPage> {
         actions: [
           IconButton(
               onPressed: () {
-                Navigator.pushNamed(context, 'ordersPage');
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => OrdersPage()));
               },
               icon: Icon(
                 Iconsax.shopping_bag,
@@ -65,9 +71,17 @@ class _CartPageState extends State<CartPage> {
       bottomNavigationBar: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          IconButton(onPressed: () {}, icon: Icon(Iconsax.home)),
           IconButton(
-            onPressed: () {},
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Homepage()));
+              },
+              icon: Icon(Iconsax.home)),
+          IconButton(
+            onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => SearchPage()));
+            },
             icon: Icon(Icons.search_rounded, color: Colors.black),
             tooltip: 'Search',
             color: Colors.black,
@@ -77,7 +91,12 @@ class _CartPageState extends State<CartPage> {
               icon: Icon(
                 Iconsax.shopping_cart,
               )),
-          IconButton(onPressed: () {}, icon: Icon(Iconsax.setting)),
+          IconButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Settingpage()));
+              },
+              icon: Icon(Iconsax.setting)),
         ],
       ),
       body: Stack(
@@ -310,7 +329,13 @@ class _CartPageState extends State<CartPage> {
                                         children: [
                                           Text('Promo Code'),
                                           TextButton(
-                                            onPressed: () {},
+                                            onPressed: () {
+                                              Navigator.push(
+                                                  context,
+                                                  MaterialPageRoute(
+                                                      builder: (context) =>
+                                                          PromoCode()));
+                                            },
                                             child: const Text(
                                               'Find',
                                               style: TextStyle(

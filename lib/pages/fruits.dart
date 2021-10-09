@@ -93,7 +93,12 @@ class Fruitpage extends StatelessWidget {
                       )),
                       Expanded(
                           child: IconButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => juicy()));
+                              },
                               icon: Icon(
                                 Icons.forward_outlined,
                                 color: Colors.green,
@@ -156,7 +161,12 @@ class Fruitpage extends StatelessWidget {
                       )),
                       Expanded(
                           child: IconButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => juicy()));
+                              },
                               icon: Icon(
                                 Icons.forward_outlined,
                                 color: Colors.green,
@@ -287,7 +297,12 @@ class Fruitpage extends StatelessWidget {
                       )),
                       Expanded(
                           child: IconButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => juicy()));
+                              },
                               icon: Icon(
                                 Icons.forward_outlined,
                                 color: Colors.green,

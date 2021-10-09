@@ -60,7 +60,7 @@ class _juicyState extends State<juicy> {
                             IconButton(
                               onPressed: () => Navigator.of(context).pop(),
                               icon: Icon(
-                                Icons.arrow_back,
+                                Icons.arrow_back_ios,
                                 color: Colors.grey[800],
                               ),
                             ),

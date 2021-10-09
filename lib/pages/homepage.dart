@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
 
 import 'package:fruitapp/pages/fruits.dart';
+import 'package:fruitapp/pages/cartPage.dart';
 import 'package:fruitapp/pages/notification.dart';
+import 'package:fruitapp/pages/searchPage.dart';
+import 'package:fruitapp/pages/settingpage.dart';
+import 'package:fruitapp/pages/juicygrapes.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({Key? key}) : super(key: key);
@@ -308,6 +313,18 @@ class Homepage extends StatelessWidget {
                     Icons.favorite_outline,
                     color: Colors.green,
                   )),
+                  Expanded(
+                      child: IconButton(
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => juicy()));
+                          },
+                          icon: Icon(
+                            Icons.forward_outlined,
+                            color: Colors.green,
+                          )))
                 ],
               )),
           Container(
@@ -362,7 +379,19 @@ class Homepage extends StatelessWidget {
                       child: Icon(
                     Icons.favorite_outline,
                     color: Colors.green,
-                  ))
+                  )),
+                  Expanded(
+                      child: IconButton(
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => juicy()));
+                          },
+                          icon: Icon(
+                            Icons.forward_outlined,
+                            color: Colors.green,
+                          )))
                 ],
               )),
           Container(
@@ -417,35 +446,51 @@ class Homepage extends StatelessWidget {
                       child: Icon(
                     Icons.favorite_outline,
                     color: Colors.green,
-                  ))
+                  )),
+                  Expanded(
+                      child: IconButton(
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => juicy()));
+                          },
+                          icon: Icon(
+                            Icons.forward_outlined,
+                            color: Colors.green,
+                          )))
                 ],
               )),
         ],
       )),
-      bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Colors.white.withOpacity(0.1),
-        elevation: 1,
-        unselectedItemColor: Colors.black,
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home_outlined),
-            label: 'Home',
+      bottomNavigationBar: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          IconButton(onPressed: () {}, icon: Icon(Iconsax.home)),
+          IconButton(
+            onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => SearchPage()));
+            },
+            icon: Icon(Icons.search_rounded, color: Colors.black),
+            tooltip: 'Search',
+            color: Colors.black,
           ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.search_outlined),
-            label: 'Search',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.shopping_cart_outlined),
-            label: 'Cart',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person_outline),
-            label: 'Profile',
-          ),
+          IconButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => CartPage()));
+              },
+              icon: Icon(
+                Iconsax.shopping_cart,
+              )),
+          IconButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Settingpage()));
+              },
+              icon: Icon(Iconsax.setting)),
         ],
-        selectedItemColor: Colors.green,
-        onTap: null,
       ),
     );
   }
